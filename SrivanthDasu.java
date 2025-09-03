@@ -39,8 +39,8 @@ public class SrivanthDasu extends Student implements SpecialInterestOrHobby
      * of the classroom.
      */
     public SrivanthDasu() {
-        firstName="Kilgore";
-        lastName="Trout";
+        firstName="Srivanth";
+        lastName="Dasu";
         mySeatX=1;
         mySeatY=1;
        // imgFile=firstName.toLowerCase()+ lastName.toLowerCase()+".jpg";
@@ -66,7 +66,7 @@ public class SrivanthDasu extends Student implements SpecialInterestOrHobby
                 getName();
                 sayName(soundFile);
             
-                myHobby("I like to time travel!");
+                myHobby("I love to code and play video games!");
             // Create a "special method for your class and put the call here.  You can twirl your image, resize it, move it around, change transparancy, or a 
             // combination of all of those types of actions, or more. Make sure to save the original image if you manipulate it, so that you can put it back.
             // Call the sitDown() method to move back  to your seat
@@ -96,32 +96,56 @@ public class SrivanthDasu extends Student implements SpecialInterestOrHobby
      * This is a local method specific to the SrivanthDasu class used to animate the character once the image is clicked on.
      * You should write your own methods to perform your own animation for your character/avatar.
      */
-    public void circleClass(){
-        setLocation(0,0);
-         Greenfoot.delay(10);
-        // move right
-        for (int i=1;i<=9;i++){
-            setLocation(i,0);
+    public void circleClass() {
+  
+        for (int i = 0; i < 4; i++) {
+            turn(90);  
             Greenfoot.delay(10);
         }
-        // move back
-        for (int i=1;i<=5;i++){
-            setLocation(9,i);
-            Greenfoot.delay(10);
-        }      
-         // move left
-        for (int i=9;i>=0;i--){
-            setLocation(i,5);
-            Greenfoot.delay(10);
-        }      
-              // move Forward
-        for (int i=5;i>=0;i--){
-            setLocation(0,i);
-            Greenfoot.delay(10);
-        }   
-           Greenfoot.delay(20);
-           returnToSeat();
+
+
+        for (int y = 0; y <= 5; y++) {
+            if (y % 2 == 0) {
+                for (int x = 0; x <= 9; x++) {
+                    setLocation(x, y);
+                    Greenfoot.delay(5);
+                }
+            } else {
+                for (int x = 9; x >= 0; x--) {
+                    setLocation(x, y);
+                    Greenfoot.delay(5);
+                }
+            }
+        }
+
+
+        GreenfootImage original = getImage(); 
+        GreenfootImage temp = new GreenfootImage(original);
+        temp.scale(original.getWidth() / 2, original.getHeight() / 2);
+        setImage(temp);
+        Greenfoot.delay(15);
+
+  
+        for (int transparency = 255; transparency >= 0; transparency -= 25) {
+            temp.setTransparency(transparency);
+            setImage(temp);
+            Greenfoot.delay(3);
+        }
+
+    
+        for (int transparency = 0; transparency <= 255; transparency += 25) {
+            temp.setTransparency(transparency);
+            setImage(temp);
+            Greenfoot.delay(3);
+        }
+
+   
+        setImage(original);
+        Greenfoot.delay(15);
+
+        returnToSeat(); 
     }
+
      /**
      * myHobby is one of the interfaces provided.  
      * An interface is just a contract for the methods that you will implement in your code.  The College Board no longer
