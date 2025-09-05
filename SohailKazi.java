@@ -1,17 +1,17 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * The AndrewAlexanderSam class can be used as a model for your own class that represents you and your seating location in AP CSA
+ * The SohailKazi class can be used as a model for your own class that represents you and your seating location in AP CSA
  * 
  * @author Mr. Kaehms
  * @version 2.0 Aug 13, 2019
  * @version 3.0 July 21, 2020
  */
-public class AndrewAlexanderSam extends Student implements SpecialInterestOrHobby
+public class SohailKazi extends Student implements SpecialInterestOrHobby
 {
 
     /**
-     * Constructor for the AndrewAlexanderSam class.
+     * Constructor for the SohailKazi class.
      * Constructors are special methods with the same exact name as the class name.  
      * Constructors to not have return types.
      * Constructors can be overloaded. This means we can call a constructor with different sets of parameter
@@ -22,15 +22,15 @@ public class AndrewAlexanderSam extends Student implements SpecialInterestOrHobb
      * @param int s (seat number within row seating arrangement)
      * 
      */
-    public AndrewAlexanderSam(String f, String l, int r, int s) {
+    public SohailKazi(String f, String l, int r, int s) {
         firstName=f;
         lastName=l;
         mySeatX=r;
         mySeatY=s;
-        portraitFile="AndrewAlexanderSam.png";    // Make sure to name your image files firstlast.jpg, all lowercase!!!
-        standingFile="AndrewAlexanderSamStanding.png";
-        soundFile="AndrewAlexanderSam.wav";  // Make sure to name your sound files firstlast.wav, all lowercase!!!
-        setImage("AndrewAlexanderSam.png");
+        portraitFile="SohailKazi.jpg";    // Make sure to name your image files firstlast.jpg, all lowercase!!!
+        standingFile="SohailKazi.jpg";
+        soundFile="SohailKaziRecording.wav";  // Make sure to name your sound files firstlast.wav, all lowercase!!!
+        setImage("SohailKazi.jpg");
         sitting=true;
     }
     /**
@@ -38,21 +38,21 @@ public class AndrewAlexanderSam extends Student implements SpecialInterestOrHobb
      * Pay attention to how the row and seat variables set the location of the image.  1,1 is the first cell in the upper left
      * of the classroom.
      */
-    public AndrewAlexanderSam() {
-    firstName="Andrew";
-    lastName="Alexander Sam";
-        mySeatX=1;
-        mySeatY=1;
-    // imgFile=firstName.toLowerCase()+ lastName.toLowerCase()+".jpg";
-    portraitFile="AndrewAlexanderSam.png";
-    standingFile="AndrewAlexanderSamStanding.png";
-     soundFile="AndrewAlexanderSam.wav";
-        setImage("AndrewAlexanderSam.png");
+    public SohailKazi() {
+        firstName="Sohail";
+        lastName="Kazi";
+        mySeatX=8;
+        mySeatY=9;
+       // imgFile=firstName.toLowerCase()+ lastName.toLowerCase()+".jpg";
+       portraitFile="SohailKazi.jpg";
+       standingFile="SohailKazi.jpg";
+        soundFile="SohailKaziRecording.wav";
+        setImage("SohailKazi.jpg");
         sitting=true;
     }
     
      /**
-     * Act - do whatever the BrianSchick actor wants to do. This method is called whenever
+    * Act - do whatever the SohailKazi actor wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */   
     public void act() 
@@ -61,17 +61,17 @@ public class AndrewAlexanderSam extends Student implements SpecialInterestOrHobb
         if(Greenfoot.mouseClicked(this)){
           //  if (sitting){
                 sitting=false;
-                setImage("AndrewAlexanderSam.png");
+                setImage("SohailKazi.jpg");
                 System.out.println(""); // Print a blank line to create space between any student output.
                 getName();
-                sayName("AndrewAlexanderSam.wav");
+                sayName("SohailKaziRecording.wav");
             
-                myHobby("I like to play Tennis!");
+                myHobby("I like to ski!");
             // Create a "special method for your class and put the call here.  You can twirl your image, resize it, move it around, change transparancy, or a 
             // combination of all of those types of actions, or more. Make sure to save the original image if you manipulate it, so that you can put it back.
             // Call the sitDown() method to move back  to your seat
             
-                circleClass();  // Kilgore Trount's special method... Please write one of your own. You can use this, but please modify it and be creative.
+                bounceAround();  // SohailKazi's special method
            
                 sitDown();
             }
@@ -93,41 +93,32 @@ public class AndrewAlexanderSam extends Student implements SpecialInterestOrHobb
 
    
     /**
-     * This is a local method specific to the BrianSchick class used to animate the character once the image is clicked on.
-     * You should write your own methods to perform your own animation for your character/avatar.
+     * This is a local method specific to the SohailKazi class used to animate the character once the image is clicked on.
+     * This animation bounces the character diagonally across the classroom.
      */
-    public void circleClass(){
-        setLocation(0,0);
-         Greenfoot.delay(10);
-        // move right
-        for (int i=1;i<=9;i++){
-            setLocation(i,0);
-            Greenfoot.delay(10);
+    public void bounceAround() {
+        int maxX = 9;
+        int maxY = 5;
+        int x = 0, y = 0;
+        int dx = 1, dy = 1;
+        for (int i = 0; i < 14; i++) {
+            setLocation(x, y);
+            Greenfoot.delay(8);
+            x += dx;
+            y += dy;
+            if (x <= 0 || x >= maxX) dx = -dx;
+            if (y <= 0 || y >= maxY) dy = -dy;
         }
-        // move back
-        for (int i=1;i<=5;i++){
-            setLocation(9,i);
-            Greenfoot.delay(10);
-        }      
-         // move left
-        for (int i=9;i>=0;i--){
-            setLocation(i,5);
-            Greenfoot.delay(10);
-        }      
-              // move Forward
-        for (int i=5;i>=0;i--){
-            setLocation(0,i);
-            Greenfoot.delay(10);
-        }   
-           Greenfoot.delay(20);
-           returnToSeat();
+        Greenfoot.delay(20);
+        returnToSeat();
     }
      /**
      * myHobby is one of the interfaces provided.  
      * An interface is just a contract for the methods that you will implement in your code.  The College Board no longer
      * tests on abstract classes and interfaces, but it is good to know about them
      */
-     public void myHobby(String s) {
+    @Override
+    public void myHobby(String s) {
          System.out.println(s);
 }
 
