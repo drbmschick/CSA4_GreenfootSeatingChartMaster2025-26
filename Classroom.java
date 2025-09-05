@@ -156,6 +156,10 @@ public class Classroom extends World
         LeeJayden student26 = new LeeJayden();
         addObject(student26,2,3);
         student26.assignSeat();
+     
+        AdithyaGnanasundar adithyagnanasundar = new AdithyaGnanasundar();
+        addObject(adithyagnanasundar,9,10);
+        adithyagnanasundar.assignSeat();
         
         ConnorWongWoo wongwooconnor = new ConnorWongWoo();
         addObject(wongwooconnor, 8, 10);
