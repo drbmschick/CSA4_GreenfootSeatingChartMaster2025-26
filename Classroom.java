@@ -164,7 +164,16 @@ public class Classroom extends World
         AgilanSadheesh agilansadheesh = new AgilanSadheesh();
         addObject(agilansadheesh, 2, 7);
         agilansadheesh.assignSeat();
-        
+
+        AndrewAlexanderSam AndrewAlexanderSam = new AndrewAlexanderSam();
+        addObject(AndrewAlexanderSam, 9, 9);
+        AndrewAlexanderSam.assignSeat();
+
+        LeeJayden student26 = new LeeJayden();
+        addObject(student26,2,3);
+        student26.assignSeat();
+
+
     }
     
     public List<Student> getAllStudents(){
