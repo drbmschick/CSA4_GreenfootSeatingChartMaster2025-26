@@ -153,6 +153,9 @@ public class Classroom extends World
         addObject(kilgoretrout,2,3);
         kilgoretrout.assignSeat();
   
+        KavyaSrivastava kavyasrivastava = new KavyaSrivastava();
+        addObject(kavyasrivastava,3,4);
+        kavyasrivastava.assignSeat();
     }
     
     public List<Student> getAllStudents(){
