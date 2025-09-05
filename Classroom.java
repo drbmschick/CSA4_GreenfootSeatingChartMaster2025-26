@@ -157,6 +157,12 @@ public class Classroom extends World
         addObject(adithyagnanasundar,9,10);
         adithyagnanasundar.assignSeat();
         
+
+        SohailKazi sohailkazi = new SohailKazi();
+        addObject(sohailkazi,8,9);
+        sohailkazi.assignSeat();
+  
+
         ConnorWongWoo wongwooconnor = new ConnorWongWoo();
         addObject(wongwooconnor, 8, 10);
         wongwooconnor.assignSeat();
