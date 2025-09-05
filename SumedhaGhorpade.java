@@ -30,7 +30,7 @@ public class SumedhaGhorpade extends Student implements SpecialInterestOrHobby
         portraitFile=f.toLowerCase()+l.toLowerCase()+".jpg";    // Make sure to name your image files firstlast.jpg, all lowercase!!!
         standingFile=firstName.toLowerCase()+ lastName.toLowerCase()+"-standing.jpg";
         soundFile=f.toLowerCase()+l.toLowerCase()+".wav";  // Make sure to name your sound files firstlast.wav, all lowercase!!!
-        setImage(portraitFile);
+        setImage("sumedhaghorpade.jpg");
         sitting=true;
     }
     /**
@@ -39,15 +39,15 @@ public class SumedhaGhorpade extends Student implements SpecialInterestOrHobby
      * of the classroom.
      */
     public SumedhaGhorpade() {
-        firstName="Kilgore";
-        lastName="Trout";
-        mySeatX=1;
-        mySeatY=1;
+        firstName="Sumedha";
+        lastName="Ghorpade";
+        mySeatX=3;
+        mySeatY=6;
        // imgFile=firstName.toLowerCase()+ lastName.toLowerCase()+".jpg";
        portraitFile=firstName.toLowerCase()+ lastName.toLowerCase()+".jpg";
        standingFile=firstName.toLowerCase()+ lastName.toLowerCase()+"-standing.jpg";
         soundFile=firstName.toLowerCase()+ lastName.toLowerCase()+".wav";
-        setImage(portraitFile);
+        setImage("sumedhaghorpade.jpg");
         sitting=true;
     }
     
@@ -61,21 +61,20 @@ public class SumedhaGhorpade extends Student implements SpecialInterestOrHobby
         if(Greenfoot.mouseClicked(this)){
           //  if (sitting){
                 sitting=false;
-                setImage(standingFile);
+                setImage("sumedhaghorpade-standing.png");
                 System.out.println(""); // Print a blank line to create space between any student output.
                 getName();
-                sayName(soundFile);
+                sayName("sumedhaghorpade.wav");
             
-                myHobby("I like to time travel!");
+                myHobby("I like listening to music!");
             // Create a "special method for your class and put the call here.  You can twirl your image, resize it, move it around, change transparancy, or a 
             // combination of all of those types of actions, or more. Make sure to save the original image if you manipulate it, so that you can put it back.
             // Call the sitDown() method to move back  to your seat
             
-                circleClass();  // Kilgore Trount's special method... Please write one of your own. You can use this, but please modify it and be creative.
+                specialMethod();  // Kilgore Trount's special method... Please write one of your own. You can use this, but please modify it and be creative.
            
                 sitDown();
             }
-        
     } 
     
     /**
@@ -96,29 +95,50 @@ public class SumedhaGhorpade extends Student implements SpecialInterestOrHobby
      * This is a local method specific to the SumedhaGhorpade class used to animate the character once the image is clicked on.
      * You should write your own methods to perform your own animation for your character/avatar.
      */
-    public void circleClass(){
+    public void specialMethod(){
         setLocation(0,0);
          Greenfoot.delay(10);
         // move right
-        for (int i=1;i<=9;i++){
+        for (int i=5;i<=8;i++){
             setLocation(i,0);
             Greenfoot.delay(10);
         }
         // move back
-        for (int i=1;i<=5;i++){
+        for (int i=5;i<=8;i++){
             setLocation(9,i);
             Greenfoot.delay(10);
         }      
-         // move left
-        for (int i=9;i>=0;i--){
+        // move left
+        for (int i=8;i>=4;i--){
             setLocation(i,5);
             Greenfoot.delay(10);
         }      
-              // move Forward
-        for (int i=5;i>=0;i--){
+        // move Forward
+        for (int i=8;i>=4;i--){
             setLocation(0,i);
             Greenfoot.delay(10);
         }   
+            // move right
+        for (int i=5;i<=8;i++){
+            setLocation(i,0);
+            Greenfoot.delay(10);
+        }
+            // move back
+        for (int i=5;i<=8;i++){
+            setLocation(9,i);
+            Greenfoot.delay(10);
+        }      
+            // move left
+        for (int i=8;i>=4;i--){
+            setLocation(i,5);
+            Greenfoot.delay(10);
+        }      
+            // move Forward
+        for (int i=8;i>=4;i--){
+            setLocation(0,i);
+            Greenfoot.delay(10);
+        }
+        
            Greenfoot.delay(20);
            returnToSeat();
     }
