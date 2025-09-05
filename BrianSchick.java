@@ -39,10 +39,10 @@ public class BrianSchick extends Student implements SpecialInterestOrHobby
      * of the classroom.
      */
     public BrianSchick() {
-        firstName="Kilgore";
-        lastName="Trout";
-        mySeatX=1;
-        mySeatY=1;
+        firstName="Brian";
+        lastName="Schick";
+        mySeatX=2;
+        mySeatY=9;
        // imgFile=firstName.toLowerCase()+ lastName.toLowerCase()+".jpg";
        portraitFile=firstName.toLowerCase()+ lastName.toLowerCase()+".jpg";
        standingFile=firstName.toLowerCase()+ lastName.toLowerCase()+"-standing.jpg";
@@ -66,7 +66,7 @@ public class BrianSchick extends Student implements SpecialInterestOrHobby
                 getName();
                 sayName(soundFile);
             
-                myHobby("I like to time travel!");
+                myHobby("I like to play board games!");
             // Create a "special method for your class and put the call here.  You can twirl your image, resize it, move it around, change transparancy, or a 
             // combination of all of those types of actions, or more. Make sure to save the original image if you manipulate it, so that you can put it back.
             // Call the sitDown() method to move back  to your seat
