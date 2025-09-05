@@ -27,10 +27,10 @@ public class AndrewAlexanderSam extends Student implements SpecialInterestOrHobb
         lastName=l;
         mySeatX=r;
         mySeatY=s;
-        portraitFile=f.toLowerCase()+l.toLowerCase()+".jpg";    // Make sure to name your image files firstlast.jpg, all lowercase!!!
-        standingFile=firstName.toLowerCase()+ lastName.toLowerCase()+"-standing.jpg";
-        soundFile=f.toLowerCase()+l.toLowerCase()+".wav";  // Make sure to name your sound files firstlast.wav, all lowercase!!!
-        setImage(AndrewAlexanderSam.png);
+        portraitFile="AndrewAlexanderSam.png";    // Make sure to name your image files firstlast.jpg, all lowercase!!!
+        standingFile="AndrewAlexanderSamStanding.png";
+        soundFile="AndrewAlexanderSam.wav";  // Make sure to name your sound files firstlast.wav, all lowercase!!!
+        setImage("AndrewAlexanderSam.png");
         sitting=true;
     }
     /**
@@ -44,10 +44,10 @@ public class AndrewAlexanderSam extends Student implements SpecialInterestOrHobb
         mySeatX=1;
         mySeatY=1;
     // imgFile=firstName.toLowerCase()+ lastName.toLowerCase()+".jpg";
-    portraitFile=firstName.toLowerCase()+ lastName.toLowerCase().replace(" ","")+".jpg";
-    standingFile=firstName.toLowerCase()+ lastName.toLowerCase().replace(" ","")+"-standing.jpg";
-     soundFile=firstName.toLowerCase()+ lastName.toLowerCase().replace(" ","")+".wav";
-        setImage(AndrewAlexanderSam.png);
+    portraitFile="AndrewAlexanderSam.png";
+    standingFile="AndrewAlexanderSamStanding.png";
+     soundFile="AndrewAlexanderSam.wav";
+        setImage("AndrewAlexanderSam.png");
         sitting=true;
     }
     
@@ -61,12 +61,12 @@ public class AndrewAlexanderSam extends Student implements SpecialInterestOrHobb
         if(Greenfoot.mouseClicked(this)){
           //  if (sitting){
                 sitting=false;
-                setImage(AndrewAlexanderSam.png);
+                setImage("AndrewAlexanderSam.png");
                 System.out.println(""); // Print a blank line to create space between any student output.
                 getName();
-                sayName(AndrewAlexanderSam.wav);
+                sayName("AndrewAlexanderSam.wav");
             
-                myHobby("I like to time travel!");
+                myHobby("I like to play Tennis!");
             // Create a "special method for your class and put the call here.  You can twirl your image, resize it, move it around, change transparancy, or a 
             // combination of all of those types of actions, or more. Make sure to save the original image if you manipulate it, so that you can put it back.
             // Call the sitDown() method to move back  to your seat
