@@ -20,9 +20,9 @@ public class AdithyaGnanasundar extends Student implements SpecialInterestOrHobb
         lastName=l;
         mySeatX=r;
         mySeatY=s;
-        portraitFile=f.toLowerCase()+l.toLowerCase()+".jpg";    // Make sure to name your image files firstlast.jpg, all lowercase!!!
-        standingFile=firstName.toLowerCase()+ lastName.toLowerCase()+"-standing.jpg";
-        soundFile=f.toLowerCase()+l.toLowerCase()+".wav";  // Make sure to name your sound files firstlast.wav, all lowercase!!!
+        portraitFile=f +l +".jpg";    // Make sure to name your image files firstlast.jpg, all lowercase!!!
+        standingFile=firstName + lastName +"-standing.jpg";
+        soundFile=f +l +".wav";  // Make sure to name your sound files firstlast.wav, all lowercase!!!
         setImage(portraitFile);
         sitting=true;
     }
@@ -36,10 +36,10 @@ public class AdithyaGnanasundar extends Student implements SpecialInterestOrHobb
         lastName="Gnanasundar";
         mySeatX=1;
         mySeatY=1;
-       // imgFile=firstName.toLowerCase()+ lastName.toLowerCase()+".jpg";
-       portraitFile=firstName.toLowerCase()+ lastName.toLowerCase()+".jpg";
-       standingFile=firstName.toLowerCase()+ lastName.toLowerCase()+"-standing.jpg";
-        soundFile=firstName.toLowerCase()+ lastName.toLowerCase()+".wav";
+       // imgFile=firstName + lastName +".jpg";
+       portraitFile=firstName + lastName +".jpg";
+       standingFile=firstName + lastName +"-standing.jpg";
+        soundFile=firstName + lastName +".wav";
         setImage(portraitFile);
         sitting=true;
     }
