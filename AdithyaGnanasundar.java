@@ -37,9 +37,9 @@ public class AdithyaGnanasundar extends Student implements SpecialInterestOrHobb
         mySeatX=1;
         mySeatY=1;
        // imgFile=firstName + lastName +".jpg";
-       portraitFile=firstName + lastName +".jpg";
-       standingFile=firstName + lastName +"-standing.jpg";
-        soundFile=firstName + lastName +".wav";
+       portraitFile=firstName.toLowerCase() + lastName.toLowerCase() +".jpg";
+       standingFile=firstName.toLowerCase() + lastName.toLowerCase() +"-standing.jpg";
+        soundFile=firstName.toLowerCase() + lastName.toLowerCase() +".wav";
         setImage(portraitFile);
         sitting=true;
     }
