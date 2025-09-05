@@ -154,7 +154,7 @@ public class Classroom extends World
         kilgoretrout.assignSeat();
      
         AdithyaGnanasundar adithyagnanasundar = new AdithyaGnanasundar();
-        addObject(adithyagnanasundar, 8, 10);
+        addObject(adithyagnanasundar, 9, 10);
         adithyagnanasundar.assignSeat();
         
 
