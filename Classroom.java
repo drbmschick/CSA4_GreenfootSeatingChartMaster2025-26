@@ -153,14 +153,12 @@ public class Classroom extends World
         addObject(kilgoretrout,2,3);
         kilgoretrout.assignSeat();
 
-<<<<<<< HEAD
-=======
+
         SrivanthDasu srivanthdasu = new SrivanthDasu();
         addObject(srivanthdasu,5,9);
         srivanthdasu.assignSeat();
 
-     
->>>>>>> master
+
         AdithyaGnanasundar adithyagnanasundar = new AdithyaGnanasundar();
         addObject(adithyagnanasundar,9,10);
         adithyagnanasundar.assignSeat();
@@ -183,14 +181,11 @@ public class Classroom extends World
         addObject(student26,2,3);
         student26.assignSeat();
 
-        
-<<<<<<< HEAD
+
         // Richie's instance
         RichieShin richieshin = new RichieShin();
         addObject(richieshin,9,7);
         richieshin.assignSeat();
-=======
->>>>>>> master
 
     }
     
