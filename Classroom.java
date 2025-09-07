@@ -153,18 +153,44 @@ public class Classroom extends World
         addObject(kilgoretrout,2,3);
         kilgoretrout.assignSeat();
 
+<<<<<<< HEAD
+=======
+        SrivanthDasu srivanthdasu = new SrivanthDasu();
+        addObject(srivanthdasu,5,9);
+        srivanthdasu.assignSeat();
+
+     
+>>>>>>> master
         AdithyaGnanasundar adithyagnanasundar = new AdithyaGnanasundar();
         addObject(adithyagnanasundar,9,10);
         adithyagnanasundar.assignSeat();
         
+
+        SohailKazi sohailkazi = new SohailKazi();
+        addObject(sohailkazi,8,9);
+        sohailkazi.assignSeat();
+  
+
         ConnorWongWoo wongwooconnor = new ConnorWongWoo();
         addObject(wongwooconnor, 8, 10);
         wongwooconnor.assignSeat();
+
+        AndrewAlexanderSam AndrewAlexanderSam = new AndrewAlexanderSam();
+        addObject(AndrewAlexanderSam, 9, 9);
+        AndrewAlexanderSam.assignSeat();
+
+        LeeJayden student26 = new LeeJayden();
+        addObject(student26,2,3);
+        student26.assignSeat();
+
         
+<<<<<<< HEAD
         // Richie's instance
         RichieShin richieshin = new RichieShin();
         addObject(richieshin,9,7);
         richieshin.assignSeat();
+=======
+>>>>>>> master
 
     }
     
