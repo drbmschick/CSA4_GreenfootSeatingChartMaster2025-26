@@ -149,14 +149,42 @@ public class Classroom extends World
  // Each student needs to create their specific instance following the KilgoreTrout example.
  // Your current seatX and seatY can be found by right clicking on the corresponding seat in the Classrom.
  // and then clicking on the inspect text
+
+       
+        VedantChauhan vedantchauhan = new VedantChauhan();
+        addObject(vedantchauhan,5,7);
+        vedantchauhan.assignSeat();
+
         KilgoreTrout kilgoretrout = new KilgoreTrout();
         addObject(kilgoretrout,2,3);
         kilgoretrout.assignSeat();
+        
+        AtharvaSharma atharvasharma = new AtharvaSharma();
+        addObject(atharvasharma,6,4);
+        atharvasharma.assignSeat();
+
+
+        AdityaVengata adityavengata = new AdityaVengata();
+        addObject(adityavengata,6,7);
+        adityavengata.assignSeat();
+
+
+        EthanTseng tsengethan = new EthanTseng();
+        addObject(tsengethan, 2, 6);
+        tsengethan.assignSeat();
+
+        SumedhaGhorpade sumedhaghorpade = new SumedhaGhorpade();
+        addObject(sumedhaghorpade,6,3);
+        sumedhaghorpade.assignSeat();
+       
+        SrivanthDasu srivanthdasu = new SrivanthDasu();
+        addObject(srivanthdasu,5,9);
+        srivanthdasu.assignSeat();
      
+
         AdithyaGnanasundar adithyagnanasundar = new AdithyaGnanasundar();
         addObject(adithyagnanasundar,9,10);
-        adithyagnanasundar.assignSeat();
-        
+        adithyagnanasundar.assignSeat(); 
 
         SohailKazi sohailkazi = new SohailKazi();
         addObject(sohailkazi,8,9);
@@ -169,7 +197,7 @@ public class Classroom extends World
         ConnorWongWoo wongwooconnor = new ConnorWongWoo();
         addObject(wongwooconnor, 8, 10);
         wongwooconnor.assignSeat();
-        
+
         AndrewAlexanderSam AndrewAlexanderSam = new AndrewAlexanderSam();
         addObject(AndrewAlexanderSam, 9, 9);
         AndrewAlexanderSam.assignSeat();
