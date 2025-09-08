@@ -157,6 +157,10 @@ public class Classroom extends World
         addObject(tsengethan, 2, 6);
         tsengethan.assignSeat();
 
+        SumedhaGhorpade sumedhaghorpade = new SumedhaGhorpade();
+        addObject(sumedhaghorpade,6,3);
+        sumedhaghorpade.assignSeat();
+       
         SrivanthDasu srivanthdasu = new SrivanthDasu();
         addObject(srivanthdasu,5,9);
         srivanthdasu.assignSeat();
