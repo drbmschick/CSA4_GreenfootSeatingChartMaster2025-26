@@ -21,7 +21,7 @@ public class AdithyaGnanasundar extends Student implements SpecialInterestOrHobb
         mySeatX=r;
         mySeatY=s;
         portraitFile=f +l +".jpg";    // Make sure to name your image files firstlast.jpg, all lowercase!!!
-        standingFile=firstName + lastName +"-standing.jpg";
+        standingFile="adithyagnanasundar-standing.jpg";
         soundFile=f +l +".wav";  // Make sure to name your sound files firstlast.wav, all lowercase!!!
         setImage(portraitFile);
         sitting=true;
@@ -38,7 +38,7 @@ public class AdithyaGnanasundar extends Student implements SpecialInterestOrHobb
         mySeatY=1;
        // imgFile=firstName + lastName +".jpg";
        portraitFile=firstName + lastName +".jpg";
-       standingFile=firstName + lastName +"-standing.jpg";
+       standingFile="adithyagnanasundar-standing.jpg";
         soundFile=firstName + lastName +".wav";
         setImage(portraitFile);
         sitting=true;
