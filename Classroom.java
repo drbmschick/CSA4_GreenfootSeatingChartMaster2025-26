@@ -158,6 +158,16 @@ public class Classroom extends World
         KilgoreTrout kilgoretrout = new KilgoreTrout();
         addObject(kilgoretrout,2,3);
         kilgoretrout.assignSeat();
+        
+        AtharvaSharma atharvasharma = new AtharvaSharma();
+        addObject(atharvasharma,6,4);
+        atharvasharma.assignSeat();
+
+
+        AdityaVengata adityavengata = new AdityaVengata();
+        addObject(adityavengata,6,7);
+        adityavengata.assignSeat();
+
 
         EthanTseng tsengethan = new EthanTseng();
         addObject(tsengethan, 2, 6);
@@ -170,7 +180,7 @@ public class Classroom extends World
         SrivanthDasu srivanthdasu = new SrivanthDasu();
         addObject(srivanthdasu,5,9);
         srivanthdasu.assignSeat();
-        
+
         AdithyaGnanasundar adithyagnanasundar = new AdithyaGnanasundar();
         addObject(adithyagnanasundar,9,10);
         adithyagnanasundar.assignSeat(); 
@@ -178,6 +188,7 @@ public class Classroom extends World
         SohailKazi sohailkazi = new SohailKazi();
         addObject(sohailkazi,8,9);
         sohailkazi.assignSeat();
+
 
         ConnorWongWoo wongwooconnor = new ConnorWongWoo();
         addObject(wongwooconnor, 8, 10);
@@ -191,7 +202,6 @@ public class Classroom extends World
         addObject(student26,2,3);
         student26.assignSeat();
 
-        // Richie's instance
         RichieShin richieshin = new RichieShin();
         addObject(richieshin,9,7);
         richieshin.assignSeat();
