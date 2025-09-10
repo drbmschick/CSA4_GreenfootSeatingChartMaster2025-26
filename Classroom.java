@@ -205,6 +205,10 @@ public class Classroom extends World
         RichieShin richieshin = new RichieShin();
         addObject(richieshin,9,7);
         richieshin.assignSeat();
+
+        ChloeBarlow chloeBarlow = new ChloeBarlow();
+        addObject(chloeBarlow,9,3);
+        chloeBarlow.assignSeat();
     }
     
     public List<Student> getAllStudents(){
