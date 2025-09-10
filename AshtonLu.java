@@ -20,10 +20,11 @@ public class AshtonLu extends Student implements SpecialInterestOrHobby
         lastName=l;
         mySeatX=r;
         mySeatY=s;
-        portraitFile=f.toLowerCase()+l.toLowerCase()+".jpg";
+        portraitFile="ashtonlu.jpg";
         standingFile=firstName.toLowerCase()+ lastName.toLowerCase()+"-standing.jpg";
         soundFile=f.toLowerCase()+l.toLowerCase()+".wav";
         setImage(portraitFile);
+ 
         sitting=true;
     }
     
@@ -55,7 +56,7 @@ public class AshtonLu extends Student implements SpecialInterestOrHobby
             getName();
             sayName(soundFile);
             
-            myHobby("I have a record of 211 wpm on Monkeytype!");
+            myHobby("I like playing basketball, chess, and golf.");
             
             // Call your special method here
             spinAvatar();
