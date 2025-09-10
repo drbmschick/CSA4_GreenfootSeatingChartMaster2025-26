@@ -33,8 +33,8 @@ public class KavyaSrivastava extends Student implements SpecialInterestOrHobby
     public KavyaSrivastava() {
         firstName = "Kavya";
         lastName = "Srivastava";
-        mySeatX = 3;  // pick your row
-        mySeatY = 2;  // pick your seat
+        mySeatX = 8;  // pick your row
+        mySeatY = 6;  // pick your seat
         portraitFile = "kavyasrivastava.jpeg";
         standingFile = "kavyasrivastava-standing.jpeg";
         soundFile = "kavyasrivastava.wav";
