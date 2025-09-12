@@ -159,7 +159,7 @@ public class Classroom extends World
         vedantchauhan.assignSeat();
 
         RishiThota rishithota = new RishiThota();
-        addObject(rishithota,4,6);
+        addObject(rishithota,6,10);
         rishithota.assignSeat();
 
         KilgoreTrout kilgoretrout = new KilgoreTrout();
