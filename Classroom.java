@@ -29,6 +29,8 @@ public class Classroom extends World
     {    
         // Create a new world with 10x6 cells with a cell size of 130x130 pixels.
         super(14, 14, 60); 
+        // Ensure students are drawn above desks so their portraits are visible
+        setPaintOrder(Student.class, StudentDesk.class, TeacherDesk.class);
 
         prepare();
     }
@@ -244,6 +246,9 @@ public class Classroom extends World
         addObject(chloeBarlow,9,3);
         chloeBarlow.assignSeat();
 
+        ShreyasShashidhara shreyasShashidhara = new ShreyasShashidhara();
+        addObject(shreyasShashidhara,5,3);
+        shreyasShashidhara.assignSeat();
     }
     
     public List<Student> getAllStudents(){
