@@ -164,7 +164,7 @@ public class Classroom extends World
         kilgoretrout.assignSeat();
 
         AaravSawant sawantaarav = new AaravSawant();
-        addObject(sawantaarav,3,1);
+        addObject(sawantaarav,9,4);
         sawantaarav.assignSeat();
         
         AtharvaSharma atharvasharma = new AtharvaSharma();
