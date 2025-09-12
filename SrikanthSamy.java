@@ -90,10 +90,8 @@ public class SrikanthSamy extends Student implements SpecialInterestOrHobby
    
     /**
      * This is a local method specific to the SrikanthSamy class used to animate the character once the image is clicked on.
-     * A creative spiral dance movement pattern.
      */
     public void spiralDance(){
-        System.out.println("Starting spiral dance movement!");
         
         // Simple movement test - just move in a small square
         setLocation(4,4);
@@ -117,7 +115,6 @@ public class SrikanthSamy extends Student implements SpecialInterestOrHobby
         setLocation(4,3);
         Greenfoot.delay(15);
         
-        System.out.println("Movement complete, returning to seat!");
         Greenfoot.delay(20);
         returnToSeat();
     }
