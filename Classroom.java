@@ -171,7 +171,7 @@ public class Classroom extends World
         brandenpham.assignSeat();
   
         AaravSawant sawantaarav = new AaravSawant();
-        addObject(sawantaarav,3,1);
+        addObject(sawantaarav,9,4);
         sawantaarav.assignSeat();
 
         RevanthGuda revanthguda = new RevanthGuda();
@@ -211,10 +211,8 @@ public class Classroom extends World
         addObject(sohailkazi,8,9);
         sohailkazi.assignSeat();
 
-
- 
         KavyaSrivastava kavyasrivastava = new KavyaSrivastava();
-        addObject(kavyasrivastava,6,8);
+        addObject(kavyasrivastava,8,6);
         kavyasrivastava.assignSeat();
 
         ConnorWongWoo wongwooconnor = new ConnorWongWoo();
@@ -230,6 +228,10 @@ public class Classroom extends World
         addObject(student26,2,3);
         student26.assignSeat();
 
+        BrianSchick brianschick = new BrianSchick();
+        addObject(brianschick,2,9);
+        brianschick.assignSeat();
+        
         RichieShin richieshin = new RichieShin();
         addObject(richieshin,9,7);
         richieshin.assignSeat();

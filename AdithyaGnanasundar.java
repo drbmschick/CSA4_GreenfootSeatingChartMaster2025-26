@@ -40,6 +40,7 @@ public class AdithyaGnanasundar extends Student implements SpecialInterestOrHobb
        portraitFile=firstName + lastName +".jpg";
        standingFile="adithyagnanasundar-standing.jpg";
         soundFile=firstName + lastName +".wav";
+
         setImage(portraitFile);
         sitting=true;
     }
