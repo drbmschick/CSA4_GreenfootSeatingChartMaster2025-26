@@ -39,10 +39,10 @@ public class EthanTseng extends Student implements SpecialInterestOrHobby
      * of the classroom.
      */
     public EthanTseng() {
-        firstName="Kilgore";
-        lastName="Trout";
-        mySeatX=1;
-        mySeatY=1;
+        firstName="Ethan";
+        lastName="Tseng";
+        mySeatX=2;
+        mySeatY=6;
        // imgFile=firstName.toLowerCase()+ lastName.toLowerCase()+".jpg";
        portraitFile=firstName.toLowerCase()+ lastName.toLowerCase()+".jpg";
        standingFile=firstName.toLowerCase()+ lastName.toLowerCase()+"-standing.jpg";
@@ -66,7 +66,7 @@ public class EthanTseng extends Student implements SpecialInterestOrHobby
                 getName();
                 sayName(soundFile);
             
-                myHobby("I like to time travel!");
+                myHobby("I like to play soccer!");
             // Create a "special method for your class and put the call here.  You can twirl your image, resize it, move it around, change transparancy, or a 
             // combination of all of those types of actions, or more. Make sure to save the original image if you manipulate it, so that you can put it back.
             // Call the sitDown() method to move back  to your seat
@@ -98,29 +98,25 @@ public class EthanTseng extends Student implements SpecialInterestOrHobby
      */
     public void circleClass(){
         setLocation(0,0);
-         Greenfoot.delay(10);
-        // move right
-        for (int i=1;i<=9;i++){
+        // moves right
+        for (int i = 1;i<=12;i++){
             setLocation(i,0);
             Greenfoot.delay(10);
         }
-        // move back
-        for (int i=1;i<=5;i++){
-            setLocation(9,i);
+        for (int i=1;i<=7;i++){
+            setLocation(12,i);
             Greenfoot.delay(10);
-        }      
-         // move left
-        for (int i=9;i>=0;i--){
-            setLocation(i,5);
+        }
+        for (int i=11;i>=0;i--){
+            setLocation(i,9);
             Greenfoot.delay(10);
-        }      
-              // move Forward
-        for (int i=5;i>=0;i--){
+        }
+        for (int i=7;i>=0;i--){
             setLocation(0,i);
             Greenfoot.delay(10);
-        }   
-           Greenfoot.delay(20);
-           returnToSeat();
+        }  
+        
+        returnToSeat();
     }
      /**
      * myHobby is one of the interfaces provided.  
@@ -132,3 +128,4 @@ public class EthanTseng extends Student implements SpecialInterestOrHobby
 }
 
 }
+
