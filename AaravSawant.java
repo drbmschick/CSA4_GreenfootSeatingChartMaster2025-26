@@ -41,8 +41,8 @@ public class AaravSawant extends Student implements SpecialInterestOrHobby
     public AaravSawant() {
         firstName="Aarav";
         lastName="Sawant";
-        mySeatX=3;
-        mySeatY=1;
+        mySeatX=9;
+        mySeatY=4;
        // imgFile=firstName.toLowerCase()+ lastName.toLowerCase()+".jpg";
        portraitFile=firstName.toLowerCase()+ lastName.toLowerCase()+".jpg";
        standingFile=firstName.toLowerCase()+ lastName.toLowerCase()+"-standing.jpg";
