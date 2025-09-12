@@ -25,8 +25,8 @@ public class RishiThota extends Student implements SpecialInterestOrHobby
     public RishiThota(String f, String l, int r, int s) {
         firstName=f;
         lastName=l;
-        mySeatX=4;
-        mySeatY=6;
+        mySeatX=6;
+        mySeatY=10;
         portraitFile=f.toLowerCase()+l.toLowerCase()+".jpg";    // Make sure to name your image files firstlast.jpg, all lowercase!!!
         standingFile=firstName.toLowerCase()+ lastName.toLowerCase()+"-standing.jpg";
         soundFile=f.toLowerCase()+l.toLowerCase()+".wav";  // Make sure to name your sound files firstlast.wav, all lowercase!!!
@@ -41,8 +41,8 @@ public class RishiThota extends Student implements SpecialInterestOrHobby
     public RishiThota() {
         firstName="Rishi";
         lastName="Thota";
-        mySeatX=4;
-        mySeatY=6;
+        mySeatX=6;
+        mySeatY=10;
        // imgFile=firstName.toLowerCase()+ lastName.toLowerCase()+".jpg";
        portraitFile=firstName.toLowerCase()+ lastName.toLowerCase()+".png";
        standingFile=firstName.toLowerCase()+ lastName.toLowerCase()+"-standing.png";
