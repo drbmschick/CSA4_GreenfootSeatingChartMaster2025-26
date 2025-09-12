@@ -150,7 +150,10 @@ public class Classroom extends World
  // Your current seatX and seatY can be found by right clicking on the corresponding seat in the Classrom.
  // and then clicking on the inspect text
 
-       
+        AshtonLu ashtonlu = new AshtonLu();
+        addObject(ashtonlu,5,6);
+        ashtonlu.assignSeat();
+  
         VedantChauhan vedantchauhan = new VedantChauhan();
         addObject(vedantchauhan,5,7);
         vedantchauhan.assignSeat();
@@ -162,16 +165,26 @@ public class Classroom extends World
         KilgoreTrout kilgoretrout = new KilgoreTrout();
         addObject(kilgoretrout,2,3);
         kilgoretrout.assignSeat();
-        
+
+        BrandenPham brandenpham = new BrandenPham();
+        addObject(brandenpham,5,10);
+        brandenpham.assignSeat();
+  
+        AaravSawant sawantaarav = new AaravSawant();
+        addObject(sawantaarav,3,1);
+        sawantaarav.assignSeat();
+
+        RevanthGuda revanthguda = new RevanthGuda();
+        addObject(revanthguda,6,9);
+        revanthguda.assignSeat();
+
         AtharvaSharma atharvasharma = new AtharvaSharma();
         addObject(atharvasharma,6,4);
         atharvasharma.assignSeat();
 
-
         AdityaVengata adityavengata = new AdityaVengata();
         addObject(adityavengata,6,7);
         adityavengata.assignSeat();
-
 
         EthanTseng tsengethan = new EthanTseng();
         addObject(tsengethan, 2, 6);
@@ -185,18 +198,29 @@ public class Classroom extends World
         addObject(srivanthdasu,5,9);
         srivanthdasu.assignSeat();
 
+
         AdithyaGnanasundar adithyagnanasundar = new AdithyaGnanasundar();
         addObject(adithyagnanasundar,9,10);
         adithyagnanasundar.assignSeat(); 
+        
+        AgilanSadheesh agilansadheesh = new AgilanSadheesh();
+        addObject(agilansadheesh, 2, 7);
+        agilansadheesh.assignSeat();       
 
         SohailKazi sohailkazi = new SohailKazi();
         addObject(sohailkazi,8,9);
         sohailkazi.assignSeat();
 
 
+ 
+        KavyaSrivastava kavyasrivastava = new KavyaSrivastava();
+        addObject(kavyasrivastava,6,8);
+        kavyasrivastava.assignSeat();
+
         ConnorWongWoo wongwooconnor = new ConnorWongWoo();
         addObject(wongwooconnor, 8, 10);
         wongwooconnor.assignSeat();
+
 
         AndrewAlexanderSam AndrewAlexanderSam = new AndrewAlexanderSam();
         addObject(AndrewAlexanderSam, 9, 9);
