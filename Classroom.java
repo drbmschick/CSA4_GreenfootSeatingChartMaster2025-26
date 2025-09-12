@@ -195,16 +195,20 @@ public class Classroom extends World
         AdithyaGnanasundar adithyagnanasundar = new AdithyaGnanasundar();
         addObject(adithyagnanasundar,9,10);
         adithyagnanasundar.assignSeat(); 
+        
+        AgilanSadheesh agilansadheesh = new AgilanSadheesh();
+        addObject(agilansadheesh, 2, 7);
+        agilansadheesh.assignSeat();       
 
         SohailKazi sohailkazi = new SohailKazi();
         addObject(sohailkazi,8,9);
         sohailkazi.assignSeat();
 
-  
-        KavyaSrivastava kavyasrivastava = new KavyaSrivastava();
-        addObject(kavyasrivastava,3,4);
-        kavyasrivastava.assignSeat();
 
+ 
+        KavyaSrivastava kavyasrivastava = new KavyaSrivastava();
+        addObject(kavyasrivastava,6,8);
+        kavyasrivastava.assignSeat();
 
         ConnorWongWoo wongwooconnor = new ConnorWongWoo();
         addObject(wongwooconnor, 8, 10);
