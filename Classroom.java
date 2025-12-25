@@ -249,6 +249,10 @@ public class Classroom extends World
         ShreyasShashidhara shreyasShashidhara = new ShreyasShashidhara();
         addObject(shreyasShashidhara,5,3);
         shreyasShashidhara.assignSeat();
+
+        NikashSasikumar nikashsasikumar = new NikashSasikumar();
+        addObject(nikashsasikumar,3,3);
+        nikashsasikumar.assignSeat();
     }
     
     public List<Student> getAllStudents(){
